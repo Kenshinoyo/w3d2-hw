@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import NavBar from '../components/NavBar';
@@ -6,10 +6,9 @@ import NavBar from '../components/NavBar';
 import Home from './Home';
 
 import Roster from './Roster';
-import Score from './score';
+import Score from './Score';
 
 import '../App.css';
-
 
 const App = () => {
 
@@ -22,7 +21,7 @@ const App = () => {
           <Home />
         </Route>
 
-        <Route exact path="/students">
+        <Route exact path="/roster">
           <Roster />
         </Route>
 

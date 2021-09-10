@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import Student from '../components/Student'
 
-const Roster = () => {
-
+const Score = (props) => {
     const [studentData] = useState({
 
         students: [
@@ -81,18 +79,15 @@ const Roster = () => {
         ]
     }
     )
-    const studentsList = studentData.students.map((student) => <Student student={student} name={student.name} />)
+
+    // const studentsList = studentData.students.map((student) => <Student student={student} name={student.name} />)
 
     return (
-        <div className = "roster">
-            
-            {studentsList}
-
-        ROSTER COMPONENT
-        
-        </div >
+        <div>
+            score: {props.points.score} date: {props.points.date}
+        </div>
     )
 }
 
 
-export default Roster
+export default Score
