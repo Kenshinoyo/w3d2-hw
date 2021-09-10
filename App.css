@@ -17,3 +17,10 @@
   justify-content: space-evenly;
   list-style: none;
 }
+
+#footer {
+  background-color: lightgreen;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+}
