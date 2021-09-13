@@ -4,7 +4,9 @@ const Score = (props) => {
     return (
         <div>
             <p> 
-                Date: {props.date}
+                {/*- Using props, the date, and the scores of the students 
+                are accessed from the "studentData" state definited in the <Roster/> component. */}
+                Date: {props.date}    
                 Score: {props.score} 
             </p>
         </div>
